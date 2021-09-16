@@ -1,0 +1,233 @@
+/* css reset  */
+*{
+    color: black;
+    font-family: 'Bree Serif', serif;
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* variables (may not use) */
+:root{
+    --navbar-height: 40px;
+}
+/* navigation bar  */
+#navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+/* navbar: logo and images  */
+#logo{
+    
+    margin: 13px 17px;
+}
+#logo img{
+    height: 71px;
+    margin: 3px 3px;
+}
+/* navbar: list items */
+#navbar ul{
+    display: flex;
+    /* flex-direction: row-reverse; */
+}
+#navbar::before{
+    content: "";
+    background-color: burlywood;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar ul li{
+    font-size: 1.1rem;
+    list-style: none;
+}
+#navbar ul li a{
+    /* border-radius: 20px; */
+    /* color: white; */
+    display: block;
+    padding: 0px 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    /* background-color: crimson; */
+}
+
+/* section: home */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 456px;
+    padding: 0px 150px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 81.7%;
+    width: 100%;
+    background: url(https://cdn.pixabay.com/photo/2018/06/01/13/54/books-3446451_960_720.jpg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.6;
+}
+#home h1{
+    /* color: white; */
+    font-size: 1.7rem;
+    text-align: center;
+
+}
+#home p{
+    
+    /* color: white; */
+    font-size: 1.2rem;
+    text-align: center;
+}
+/* section */
+
+/* utility classes */
+.primary{
+    /* color: white; */
+    margin: 12px 5px;
+    font-size: 1.6rem;
+    padding: 10px;
+}
+.secondary{
+    font-size: 1.2rem;
+    padding: 10px;
+}
+.btn{
+    color: black;
+    padding: 4px 12px;
+    margin: 9px 3pxpx;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: wheat;
+}
+.btn:hover{
+    background-color: whitesmoke;
+}
+.center{
+    text-align: center;
+}
+#serv::before{
+    content: "";
+    position: absolute;
+    top: 82%;
+    left: 0%;
+    height: 110%;
+    width: 100%;
+    /* background: url(https://cdn.pixabay.com/photo/2018/06/01/13/54/books-3446451_960_720.jpg) no-repeat center center/cover; */
+    z-index: -2;
+    opacity: 0.6;
+}
+#services{
+    display: flex;
+    margin: 20px;
+}
+#services .box{
+    background-color: rgb(250, 250, 245);
+    width: 30%;
+    border-radius: 20px;
+    margin: 3px 25px;
+    padding: 3px 3px;
+    border: 2px solid burlywood;
+}
+#services .box img{
+    margin: auto;
+    display: block;
+    height: 150px;
+}
+
+/* Authors  */
+#author-section{
+    /* color: white; */
+    position: relative;
+    margin: 20px 20px;
+    padding: 20px 20px;
+}
+#author-section::before{
+    content: "";
+    /* background-color: seashell; */
+    background: url(https://cdn.pixabay.com/photo/2018/06/01/13/54/books-3446451_960_720.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: -6%;
+    left: 0%;
+    width: 100%;
+    height: 111%;
+    z-index: -3;
+    opacity: 0.6;
+}
+#author{
+    margin: 0px 2px;
+    padding: 24px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.author-items{
+    padding: 20px 45px;
+}
+#author img{
+    margin: 2px 25px;
+    height: 200px;
+}
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    background-image: url(https://cdn.pixabay.com/photo/2016/12/15/12/24/contact-us-1908762__340.png);   
+    opacity: 0.6;
+}
+
+
+#contact input{
+    font-weight: bolder;
+    border: 2px solid black;
+    background-color: wheat;
+    width: 100%;
+    margin: 2px 2px;
+    padding: 2px 2px;
+    text-align: center;
+    border-radius: 10px;
+}
+#contact select{
+    font-weight: bolder;
+    border: 2px solid black;
+    background-color: wheat;
+    width: 100%;
+    margin: 2px 2px;
+    padding: 2px 2px;
+    text-align: center;
+    border-radius: 10px;
+}
+#contact textarea{
+    border: 2px solid black;
+    height: 100px;
+    border-radius: 10px;
+    background-color: wheat;
+    font-weight: bolder;
+    width: 100%;
+    margin: 2px 2px;
+    padding: 2px 2px;
+    text-align: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    
+}
+footer .center{
+    margin: 2px;
+    padding: 4px;
+    color: whitesmoke;
+    background-color: black;
+}

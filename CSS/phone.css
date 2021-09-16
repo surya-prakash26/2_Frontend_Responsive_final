@@ -1,0 +1,53 @@
+/* Navigation */
+#navbar{
+    position: sticky;
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 10px;
+    padding-bottom: 6px;
+}
+#logo img{
+    height: 50px;
+    margin: 3px 3px;
+}
+/* home section  */
+#home{
+    height: 268px;
+    padding: 3px 20px;
+}
+#home::before{
+    height: 400px;
+}
+#home p{
+    /* font-size: 17px; */
+    font-size: 1.2rem;
+}
+/* services section  */
+#services{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#services .box{
+    width: 90%;
+    margin: 7px 5px;
+}
+/* author section */
+#author{
+    flex-wrap: wrap;
+}
+.author-items {
+    padding: 4px 1px;
+}
+#author img{
+    padding: 0px 10px;
+    height: 80px;
+}
+/* contact us section  */
+
+/* utility classes  */
+.primary{
+    font-size: 1.7rem;
+}
